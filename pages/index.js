@@ -9,12 +9,12 @@ export default function Home() {
         <meta name="description" content="Interactive guide to performance marketing & customer acquisition" />
       </Head>
 
-      <header>
+      <header style={{textAlign:'center',padding:'2rem'}}>
         <h1>Performance & Acquisition Command Center</h1>
         <p>Digital ad spend to hit <strong>$646 B by 2024</strong>. Learn how to grab your slice.</p>
       </header>
 
-      <section className="card">
+      <section style={card}>
         <h2>What is Performance Marketing?</h2>
         <p>Pay only when a desired action is completed (sale, lead, download).</p>
         <ul>
@@ -24,7 +24,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="card">
+      <section style={card}>
         <h2>Key Metrics</h2>
         <ul>
           <li><b>CPA / PPS</b> – Cost per acquisition</li>
@@ -33,7 +33,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="card">
+      <section style={card}>
         <h2>Top Acquisition Tools</h2>
         <ol>
           <li>Contentsquare – session replays & funnels</li>
@@ -44,9 +44,11 @@ export default function Home() {
         </ol>
       </section>
 
-      <footer>
-        <p>Copy-paste this site, edit, and redeploy anywhere.</p>
+      <footer style={{textAlign:'center',padding:'1rem'}}>
+        <p>✅ Ready for GitHub Pages. Edit & redeploy anywhere.</p>
       </footer>
     </>
   );
 }
+
+const card = {background:'#fff',borderRadius:8,padding:'1.5rem 2rem',margin:'2rem auto',maxWidth:700,boxShadow:'0 2px 6px rgba(0,0,0,.08)'};
